@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>DojoWeather</h1>
+            <ul>
+                <li onclick="alerta('Burbank')">
+                    <a href="#">burbank</a>
+                </li>
+                <li onclick="alerta('Chicago')">
+                    <a href="#">Chicago</a>
+                </li>
+                <li onclick="alerta('Dallas')">
+                    <a href="#">Dallas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sanjose">
+            <h2>San Jose</h2>
+        <form>
+            <label>Show  temperature in</label>
+            <select onchange="cambiatemperatura(this)">
+                <option>C</option>
+                <option>F</option>
+            </select>
+        </form>
+        </div>
+
+        <div class="row">
+            <div class="day">
+                <h3>Hoy</h3>
+                <img src="assets/some_sun.png" alt="nubes">
+                <p>Parcialmente Nublado</p>
+                <div class="temperatura">
+                    <span id="temperatura1" class="tempmaxima">25°</span>
+                    <span id="temperatura2" class="tempminima">18°</span>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Hoy</h3>
+                <img src="assets/some_rain.png" alt="nubes">
+                <p>Parcialmente Nublado</p>
+                <div class="temperatura">
+                    <span id="temperatura3" class="tempmaxima">25°</span>
+                    <span id="temperatura4" class="tempminima">18°</span>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Hoy</h3>
+                <img src="assets/some_clouds.png" alt="nubes">
+                <p>Parcialmente Nublado</p>
+                <div class="temperatura">
+                    <span id="temperatura5" class="tempmaxima">25°</span>
+                    <span id="temperatura6" class="tempminima">18°</span>
+                </div>
+            </div>
+            <div class="day">
+                <h3>Hoy</h3>    
+                <img src="assets/some_sun.png" alt="nubes">
+                <p>Parcialmente Nublado</p>
+                <div class="temperatura">
+                    <span id="temperatura7" class="tempmaxima">25°</span>
+                    <span id="temperatura8" class="tempminima">18°</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="cookies">
+            <img src="assets/cookie.png" alt="cookies">
+            <div class="lasttext"> 
+                <h4>Stop!  Cookie time</h4>
+                <p>Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios. </p>
+            </div>
+            <button onclick="aceptar()" class="btn">aceppt</button>    
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
